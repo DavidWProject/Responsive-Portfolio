@@ -148,7 +148,7 @@ html {
 @media screen and (max-width: 640px) {
   header {
     overflow: hidden;
-    width: 100%; 
+    width: 650px; 
     position: static;
   }
 
@@ -162,10 +162,28 @@ html {
 
   .topnav-right a {
     padding: 10px 100px 10px 10px;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   html {
     zoom: 100%;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  header {
+    width: auto;
+  }
+  
+  .topnav-right a{
+    margin: 0px 0px 0px -300px;
+    border: 0;
+    flex-wrap: wrap;
+    display: flex; 
+    justify-content: center;
+  }
+
+  .bio p {
+    height: 700px;
   }
 }
